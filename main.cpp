@@ -1,7 +1,9 @@
-#include"CatClass.h"
+#include"parking.h"
+#include<iostream>
+
+using namespace std;
 int main (){
-	cat* Bob = new cat("gray",15);
-	cat* Steword = new cat("ranbow",5000);
-	Bob->info();
-	Steword->info();
+	ParkingSystem* PS = new ParkingSystem(1,1,1,9);
+	
+	cout<<PS->publicData<<endl;
 }
